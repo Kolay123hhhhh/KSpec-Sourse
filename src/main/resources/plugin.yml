@@ -1,0 +1,18 @@
+name: kspec
+version: '${version}'
+main: ru.kolayghost.kspec.Kspec
+api-version: '1.21'
+commands:
+  kspec:
+    description: Телепортирует игрока в режим наблюдения к указанному игроку.
+    usage: /kspec <ник>
+    permission: kspec.use
+  kspecoff:
+    permission: kspecoff.use
+    description: Возвращает игрока из режима наблюдения.
+    usage: /kspecoff
+permissions:
+  kspec.use:
+    description: Разрешает использовать команду /kspec.
+  kspecoff.use:
+    description: Разрешает использовать команду /kspecoff.
